@@ -1,7 +1,8 @@
 class Computer
+  @@users = {}
   def initialize(username, password)
     @username = username
-    @password = password
+    @@user[username] = password
     @files = {}
   end
 end
